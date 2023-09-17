@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const BlogSection = () => {
   const blogPosts = [
@@ -109,13 +110,15 @@ const BlogSection = () => {
                   </div>
                   <div className="mt-6 flex items-center">
                     <div className="flex-shrink-0">
-                      <a href={post.author.href}>
+                      <Link href={post.author.href}>
                         <Image
                           className="h-10 w-10 rounded-full"
                           src={post.author.imageUrl}
                           alt={post.author.name}
+                          width={500}
+                          height={500}
                         />
-                      </a>
+                      </Link>
                     </div>
                     <div className="ml-3">
                       <p className="text-sm font-medium text-gray-900">
