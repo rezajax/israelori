@@ -18,6 +18,7 @@ jobs:
       # DATABASE_URL: ${{ secrets.DATABASE_URL }}
       # POSTGRES_URL_NON_POOLING: ${{ secrets.DATABASE_URL }}
       POSTGRES_URL_NON_POOLING: "postgres://default:cn3MB4AswXLT@ep-mute-paper-94408801.us-east-1.postgres.vercel-storage.com:5432/verceldb"
+      DATABASE_URL: "postgres://default:cn3MB4AswXLT@ep-mute-paper-94408801.us-east-1.postgres.vercel-storage.com:5432/verceldb"
 
     steps:
       - name: Checkout code
