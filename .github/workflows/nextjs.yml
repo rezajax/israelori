@@ -3,7 +3,7 @@ name: Build and Deploy Next.js Project
 on:
   push:
     branches:
-      - main  # Adjust the branch name as needed
+      - main  # Adjust the branch name as needed 
 
 jobs:
   build:
