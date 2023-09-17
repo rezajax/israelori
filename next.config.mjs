@@ -10,6 +10,7 @@ const config = {
   images: {
     domains: ["tailwindui.com", "images.unsplash.com"],
   },
+  
 
   /**
    * If you are using `appDir` then you must comment the below `i18n` config out.

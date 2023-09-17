@@ -40,3 +40,15 @@ jobs:
         run: pnpm run build
 
       # Add more steps if needed, such as deploying to a server or hosting service.
+      - name: Deploy to GitHub Pages
+        run: |
+          git config --global user.email "rezapublisher@example.com"
+          git config --global user.name "rezPublisher"
+          git checkout --orphan gh-pages
+          git rm -rf .
+          mv -f ./.next/* .
+          rm -rf ./.next
+          git add .
+          git commit -m "Deploy to GitHub Pages"
+          git branch -M gh-pages
+          git push -f origin gh-pages
