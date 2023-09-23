@@ -1,6 +1,8 @@
 import { type Session } from "next-auth";
 import { SessionProvider } from "next-auth/react";
 import { type AppType } from "next/app";
+import { NextUIProvider } from "@nextui-org/react";
+import { ThemeProvider as NextThemesProvider } from "next-themes";
 
 import { api } from "@/utils/api";
 
@@ -12,7 +14,13 @@ const MyApp: AppType<{ session: Session | null }> = ({
 }) => {
   return (
     <SessionProvider session={session}>
-      <Component {...pageProps} />
+      <NextUIProvider>
+        {/* <main className="text-foreground bg-background dark"> */}
+        <NextThemesProvider attribute="class" defaultTheme="dark">
+          <Component {...pageProps} />
+        </NextThemesProvider>
+        {/* </main> */}
+      </NextUIProvider>
     </SessionProvider>
   );
 };

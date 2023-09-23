@@ -1,7 +1,7 @@
 import { signIn, signOut, useSession } from "next-auth/react";
 import Head from "next/head";
 import Link from "next/link";
-import Layout from "@/components/Layout";
+import Main from "@/components/Main";
 import Hero from "@/components/Hero";
 import Features from "~/components/Features";
 
@@ -12,26 +12,27 @@ import BlogSection from "~/components/BlogSection";
 import LogoSection from "~/components/LogoSection";
 import TestimonialSection from "~/components/TestimonialSection";
 import FeaturesSection from "~/components/FeatureSection";
+import { Button } from "@nextui-org/react";
 
 export default function Home() {
   const hello = api.example.hello.useQuery({ text: "from tRPC" });
 
   return (
     <>
-      <Layout>
+      <Main>
         <Hero />
         <Features />
-        {/* <Footer /> */}
         <CTA />
-        <FeaturesSection />
+        {/* <FeaturesSection /> */}
         <BlogSection />
         <TestimonialSection />
         <LogoSection />
-      </Layout>
+        <Footer />
+      </Main>
     </>
   );
 }
- 
+
 // function AuthShowcase() {
 //   const { data: sessionData } = useSession();
 

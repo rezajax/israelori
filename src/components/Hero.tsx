@@ -1,32 +1,38 @@
-import Image from 'next/image'
-import { useState } from 'react'
-
+/* eslint-disable react/no-unescaped-entities */
+import Image from "next/image";
+import { useState } from "react";
 
 export default function Example() {
-
   return (
-    <div className="isolate bg-white">
-
-
+    <div className="bg-background isolate">
       <main>
         <div className="relative py-24 sm:py-32 lg:pb-40">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-2xl text-center">
-              <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                Data to enrich your online business
+              <h1 className="text-foreground text-4xl font-bold tracking-tight sm:text-6xl">
+                {/* IsraelOri Hotel in Armenia - Where Love Finds Its Moments! */}
+                IsraelOri Hotel
               </h1>
-              <p className="mt-6 text-lg leading-8 text-gray-600">
-                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
-                fugiat veniam occaecat fugiat aliqua.
+              <h1 className="text-foreground text-1xl font-bold tracking-tight sm:text-3xl">
+                {/* IsraelOri Hotel in Armenia - Where Love Finds Its Moments! */}
+                Your Love, Your Time, Your Way!
+              </h1>
+              <p className="text-foreground mt-6 text-lg leading-8">
+                IsraelOri Hotel in Armenia specializes in hourly room rentals
+                for private encounters, catering to a discerning clientele
+                seeking a personalized romantic experience.
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-6">
                 <a
                   href="#"
-                  className="rounded-md bg-indigo-600 px-3.5 py-1.5 text-base font-semibold leading-7 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                  className="bg-primary text-foreground rounded-md px-3.5 py-1.5 text-base font-semibold leading-7 shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
-                  Get started
+                  Reserve Room
                 </a>
-                <a href="#" className="text-base font-semibold leading-7 text-gray-900">
+                <a
+                  href="#"
+                  className="text-base font-semibold leading-7 text-foreground"
+                >
                   Learn more <span aria-hidden="true">→</span>
                 </a>
               </div>
@@ -34,7 +40,7 @@ export default function Example() {
             <div className="mt-16 flow-root sm:mt-24">
               <div className="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4">
                 <Image
-                  src="https://tailwindui.com/img/component-images/project-app-screenshot.png"
+                  src="/images/293769539_1016226839041178_7954962993178532141_n.jpg"
                   alt="App screenshot"
                   width={2432}
                   height={1442}
@@ -71,5 +77,5 @@ export default function Example() {
         </div>
       </main>
     </div>
-  )
+  );
 }

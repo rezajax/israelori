@@ -1,4 +1,4 @@
-import Layout from "@/components/Layout";
+import Layout from "~/components/tailwindui/Navbar";
 import Hero from "@/components/Hero";
 import Features from "~/components/Features";
 import Footer from "@/components/Footer";

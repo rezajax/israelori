@@ -2,9 +2,9 @@ import Image from "next/image";
 
 const LogoSection = () => {
   return (
-    <div className="bg-gray-100">
+    <div className="bg-background">
       <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
-        <p className="text-center text-base font-semibold text-gray-500">
+        <p className="text-center text-base font-semibold text-default-500">
           Trusted by over 5 very average small businesses
         </p>
         <div className="mt-6 grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
