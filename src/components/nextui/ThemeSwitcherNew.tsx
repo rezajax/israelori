@@ -1,6 +1,6 @@
 import React from "react";
 import {useSwitch, VisuallyHidden, type SwitchProps} from "@nextui-org/react";
-import { useTheme } from "next-themes";
+// import { useTheme } from "next-themes";
 
 export const MoonIcon = (props: React.JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>) => (
   <svg
@@ -37,7 +37,7 @@ export const SunIcon = (props: React.JSX.IntrinsicAttributes & React.SVGProps<SV
 );
 
 const ThemeSwitch = (props: SwitchProps) => {
-  const { theme, setTheme } = useTheme();
+  // const { theme, setTheme } = useTheme();
   const {
     Component, 
     slots, 

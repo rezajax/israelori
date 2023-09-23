@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
-import { useState } from "react";
+// import { useState } from "react";
 
 export default function Example() {
   return (

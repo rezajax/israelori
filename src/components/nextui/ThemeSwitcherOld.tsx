@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import { ComputerDesktopIcon } from "@heroicons/react/24/outline";
-function SunIcon(props) {
+function SunIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       viewBox="0 0 24 24"
@@ -20,7 +20,7 @@ function SunIcon(props) {
   );
 }
 
-function MoonIcon(props) {
+function MoonIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
       <path
@@ -47,11 +47,11 @@ const ThemeSwitch = () => {
   }
   console.log("now: ", theme);
 
-  const tripple = () => {
-    theme === "dark" ? setTheme("light") : null;
-    theme === "light" ? setTheme("system") : null;
-    theme === "system" ? setTheme("dark") : null;
-  };
+  // const tripple = () => {
+  //   theme === "dark" ? setTheme("light") : null;
+  //   theme === "light" ? setTheme("system") : null;
+  //   theme === "system" ? setTheme("dark") : null;
+  // };
 
   return (
     <>
